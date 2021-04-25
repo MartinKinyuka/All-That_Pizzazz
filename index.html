@@ -23,45 +23,45 @@
     <div class="row myRow2">
       <div class="col">
         <h3>CHOOSE YOUR SIZE</h3>
-        <form method="POST" id="size_form">
-          <div class="form-group">
+        <form style="width:300px; margin:auto">
             <label>Select your pizza size</label>
-            <select id="size" name="size[]" multiple class="form-control">
+            <select id="size" name="pizza size" class="form-control">
               <option value="small">Small</option>
               <option value="medium">Medium</option>
               <option value="large">Large</option>
             </select>
-          </div>
         </form>
       </div>
       <div class="col">
         <h3>CHOOSE YOUR TOPPINGS</h3>
-        <form method="POST" id="toppings_form">
-          <div class="form-group">
+        <form style="width:300px; margin:auto">
             <label>Select your pizza toppings</label>
-            <select id="size" name="toppings[]" multiple class="form-control">
+            <select id="toppings" name="toppings" class="form-control">
               <option value="chicken periperi">Chicken Periperi</option>
               <option value="mushroom and roast beef">Mushroom and Roast beef</option>
               <option value="Diavolla">Diavolla</option>
             </select>
-          </div>
         </form>
       </div>
       <div class="col">
         <h3>CHOOSE YOUR CRUST</h3>
-        <form method="POST" id="crust_form">
-          <div class="form-group">
+        <form style="width:300px; margin:auto">
             <label>Select your pizza crust</label>
-            <select id="crust" name="crust[]" multiple class="form-control">
+            <select id="myCrust" name="crust" class="form-control">
               <option value="Crispy">Crispy</option>
               <option value="Stuffed">Stuffed</option>
               <option value="Gluten-free">Gluten-Free</option>
             </select>
-          </div>
         </form>
       </div>
     </div>
-    
+    <div class="delivery">
+      <input type="checkbox" id="delivery">
+      <label for="delivery">Do you want delivery?</label>
+    </div>
+  <div class="form-group" id="submit">
+    <input type="submit" name="Submit" value="submit" class="btn btn-info"/>
+  </div>
     
     </div>
   </div>

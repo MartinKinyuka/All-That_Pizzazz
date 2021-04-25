@@ -24,3 +24,15 @@ text-align: center;
 #toppings_form{
   width: 300px;
 }
+#submit{
+  position: relative;
+  left: 550px;
+  top: 250px;
+}
+.delivery{
+  position: relative;
+  left: 500px;
+  top: 225px;
+  font-size: large;
+  font-weight: bold;
+}
