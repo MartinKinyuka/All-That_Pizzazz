@@ -1,0 +1,26 @@
+
+.myCol1 h1{
+text-align: center;
+}
+.myCol1 h2{
+  text-align: center;
+}
+.myCol1 img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.myRow2{
+  position: relative;
+  top: 200px;
+  left: 50px;
+}
+#crust_form{
+  width: 300px;
+}
+#size_form{
+  width: 300px;
+}
+#toppings_form{
+  width: 300px;
+}
