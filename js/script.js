@@ -63,3 +63,8 @@ $(document).ready(function(){
     $("#deliveryDetails").show();
   })
 })
+$(document).ready(function(){
+  $("#submit").on("click",function(){
+    alert("Your order has been received and is being processed");
+  })
+})
