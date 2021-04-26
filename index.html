@@ -25,10 +25,10 @@
         <h3>CHOOSE YOUR SIZE</h3>
         <form id="order" style="width:300px; margin:auto">
             <label>Select your pizza size</label>
-            <select id="size" name="pizza size" class="form-control">
-              <option value="small">Small</option>
-              <option value="medium">Medium</option>
-              <option value="large">Large</option>
+            <select id="size" name="size" class="form-control">
+              <option id="sm" value="small">Small</option>
+              <option id="med" value="medium">Medium</option>
+              <option id="lar" value="large">Large</option>
             </select>
         </form>
       </div>
@@ -37,9 +37,9 @@
         <form id="order" style="width:300px; margin:auto">
             <label>Select your pizza toppings</label>
             <select id="toppings" name="toppings" class="form-control">
-              <option value="chicken periperi">Chicken Periperi</option>
-              <option value="mushroom and roast beef">Mushroom and Roast beef</option>
-              <option value="Diavolla">Diavolla</option>
+              <option id="cp" value="chicken periperi">Chicken Periperi</option>
+              <option id="murb" value="mushroom and roast beef">Mushroom and Roast beef</option>
+              <option id="dia" value="Diavolla">Diavolla</option>
             </select>
         </form>
       </div>
@@ -47,10 +47,10 @@
         <h3>CHOOSE YOUR CRUST</h3>
         <form id="order" style="width:300px; margin:auto">
             <label>Select your pizza crust</label>
-            <select id="myCrust" name="crust" class="form-control">
-              <option value="Crispy">Crispy</option>
-              <option value="Stuffed">Stuffed</option>
-              <option value="Gluten-free">Gluten-Free</option>
+            <select id="crust" name="crust" class="form-control">
+              <option id="crispy" value="Crispy">Crispy</option>
+              <option id="stuff" value="Stuffed">Stuffed</option>
+              <option id="gf" value="Gluten-free">Gluten-Free</option>
             </select>
         </form>
       </div>
@@ -59,14 +59,14 @@
       <input type="checkbox" id="delivery">
       <label for="delivery">Do you want delivery?</label>
     </div>
-  <div class="form-group" id="submit">
-    <input type="submit" name="Submit" value="submit" class="btn btn-info"/>
+  <div id="submit">
+    <input id="submission" type="button" name="Submit" value="Display Order" class="btn btn-primary"/>
   </div>
     
     </div>
   </div>
   <div class="col" id="displayOrder">
-    <table class="table">
+    <table class="table" id="orderTable">
       <thead>
         <tr>
           <th>Size</th>
@@ -76,25 +76,25 @@
       </thead>
       <tbody>
         <tr>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td id="sizes"></td>
+          <td id="tops"></td>
+          <td id="crusts"></td>
         </tr>
         <tr>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td id="sizes"></td>
+          <td id="tops"></td>
+          <td id="crusts"></td>
         </tr>
         <tr>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td id="sizes"></td>
+          <td id="tops"></td>
+          <td id="crusts"></td>
         </tr>
       </tbody>
-    </table>
-
   </div>
     
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script> 
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
