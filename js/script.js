@@ -5,6 +5,8 @@ $(document).ready(function(){
     var crust =$("#crust option:selected").val();
   
 $("#orderTable").toggle();
+$("#processButtons").toggle();
+
     
     
 $("#sizes").html(size)

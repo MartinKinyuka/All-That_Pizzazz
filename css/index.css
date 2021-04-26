@@ -39,3 +39,14 @@ text-align: center;
 .table{
   display:none
 }
+.delivery p{
+  display: none;
+}
+#processButtons{
+  display: none;
+  position: relative;
+  top: 500px;
+}
+#processOrder{
+  float: right;
+}
