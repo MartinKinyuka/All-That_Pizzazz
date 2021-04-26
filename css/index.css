@@ -39,7 +39,7 @@ text-align: center;
 .table{
   display:none
 }
-.delivery p{
+.delivery{
   display: none;
 }
 #processButtons{
@@ -50,7 +50,19 @@ text-align: center;
 #processOrder{
   float: right;
 }
+#completeOrder{
+  float: right;
+  display: none;
+}
 #add{
   display: none;
 }
+#totalCost{
+  display: none;
+}
+#mainDelivery{
+  display: none;
+  position: relative;
+  top: 450px;
   
+}

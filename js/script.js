@@ -13,6 +13,7 @@ $("#orderTable").show();
 $("#processButtons").show();
 $("#add").show();
 $("#submission").hide();
+$("#totalCost").hide()
 
 
     
@@ -38,8 +39,21 @@ $("#add").on("click", function(){
     .append($('<td>').append(crust))
     .append($('<td>').append(cost))
     
+    
   )
   
+})
+
+$("#processOrder").on("click",function(){
+  $("#orderTable").show();
+  $("#mainDelivery").show()
+  var totalCost = cost ;
+  
+    
+    
+  
+  
+
 })
     
    
