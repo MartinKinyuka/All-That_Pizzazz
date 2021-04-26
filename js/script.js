@@ -64,7 +64,7 @@ $(document).ready(function(){
   })
 })
 $(document).ready(function(){
-  $("#submit").on("click",function(){
+  $("#send").on("click",function(){
     alert("Your order has been received and is being processed");
   })
 })
