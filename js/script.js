@@ -47,9 +47,8 @@ $("#add").on("click", function(){
 $("#processOrder").on("click",function(){
   $("#orderTable").show();
   $("#mainDelivery").show()
-  var totalCost = cost ;
   
-    
+
     
   
   
@@ -57,5 +56,10 @@ $("#processOrder").on("click",function(){
 })
     
    
+  })
+})
+$(document).ready(function(){
+  $("#delivery").on("click",function(){
+    $("#deliveryDetails").show();
   })
 })

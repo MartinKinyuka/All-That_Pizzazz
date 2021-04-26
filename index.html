@@ -95,6 +95,26 @@
     <input id="processOrder" type="button" name="process-order" value="Process Order" class="btn btn-primary"/>
     <input id="completeOrder" type="button" name="process-order" value="Complete Order" class="btn btn-success"/>
   </div> 
+  <div class="col" id="deliveryDetails">
+    <h1>Enter your delivery details</h1>
+    <form class="form-inline" id="deliveryDetails">
+      <div class="form-group">
+        <label for="firstname">First name:</label>
+        <input type="name" class="form-control" id="firstName">
+      </div>
+      <div class="form-group">
+        <label for="firstname">Second name:</label>
+        <input type="name" class="form-control" id="secondName">
+      </div>
+      <select id="location" name="location" class="form-control">
+        <option>C.B.D</option>
+        <option>Ngong Road</option>
+        <option>Mombasa Road</option>
+      </select>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script> 
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="js/script.js"></script>

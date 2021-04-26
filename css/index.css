@@ -45,7 +45,7 @@ text-align: center;
 #processButtons{
   display: none;
   position: relative;
-  top: 500px;
+  top: 600px;
 }
 #processOrder{
   float: right;
@@ -63,6 +63,8 @@ text-align: center;
 #mainDelivery{
   display: none;
   position: relative;
-  top: 450px;
-  
+  top: 550px;
+}
+#deliveryDetails{
+  display: none;
 }
