@@ -46,7 +46,9 @@ $("#add").on("click", function(){
 
 $("#processOrder").on("click",function(){
   $("#orderTable").show();
-  $("#mainDelivery").show()
+  $("#mainDelivery").show();
+  $("#processOrder").hide();
+  $("#completeOrder").show()
   
 
     
@@ -66,5 +68,11 @@ $(document).ready(function(){
 $(document).ready(function(){
   $("#send").on("click",function(){
     alert("Your order has been received and is being processed");
+  })
+})
+$(document).ready(function(){
+  $("#completeOrder").on("click",function(){
+    alert("Your order has been received and is being processed");
+    location.reload();
   })
 })
