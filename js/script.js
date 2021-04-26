@@ -1,8 +1,13 @@
 $(document).ready(function(){
   $("#submission").on("click",function(){
-    var size =$("#size option:selected").val();
-    var toppings =$("#toppings option:selected").val();
-    var crust =$("#crust option:selected").val();
+    var size =$("#size option:selected").data("pick");
+    var toppings =$("#toppings option:selected").data("pick");
+    var crust =$("#crust option:selected").data("pick");
+    var a = parseInt($("#size option:selected").val());
+    var b = parseInt($("#toppings option:selected").val());
+    var c = parseInt($("#crust option:selected").val());
+    var cost = a+b+c
+    
   
 $("#orderTable").show();
 $("#processButtons").show();
@@ -15,16 +20,23 @@ $("#submission").hide();
 $("#sizes").html(size)
 $("#tops").html(toppings)
 $("#crusts").html(crust)
+$("#cost").html(cost)
 
 $("#add").on("click", function(){
-  var size =$("#size option:selected").val();
-  var toppings =$("#toppings option:selected").val();
-  var crust =$("#crust option:selected").val();
+  var size =$("#size option:selected").data("pick");
+    var toppings =$("#toppings option:selected").data("pick");
+    var crust =$("#crust option:selected").data("pick");
+    var a = parseInt($("#size option:selected").val());
+    var b = parseInt($("#toppings option:selected").val());
+    var c = parseInt($("#crust option:selected").val());
+    var cost = a+b+c
+  
   
   $('#orderTable').append($('<tr>')
     .append($('<td>').append(size))
     .append($('<td>').append(toppings))
     .append($('<td>').append(crust))
+    .append($('<td>').append(cost))
     
   )
   
