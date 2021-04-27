@@ -68,3 +68,6 @@ text-align: center;
 #deliveryDetails{
   display: none;
 }
+#total{
+  display: none;
+}

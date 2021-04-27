@@ -7,6 +7,8 @@ $(document).ready(function(){
     var b = parseInt($("#toppings option:selected").val());
     var c = parseInt($("#crust option:selected").val());
     var cost = a+b+c
+var newCost = [];
+newCost.push(cost);
     
   
 $("#orderTable").show();
@@ -31,7 +33,7 @@ $("#add").on("click", function(){
     var b = parseInt($("#toppings option:selected").val());
     var c = parseInt($("#crust option:selected").val());
     var cost = a+b+c
-  
+    newCost.push(cost); 
   
   $('#orderTable').append($('<tr>')
     .append($('<td>').append(size))
@@ -48,7 +50,13 @@ $("#processOrder").on("click",function(){
   $("#orderTable").show();
   $("#mainDelivery").show();
   $("#processOrder").hide();
-  $("#completeOrder").show()
+  $("#completeOrder").show();
+  $("#total").show();
+  var pizzaTotal = 0;
+for (var i = 0; i < newCost.length; i++) {
+    pizzaTotal += newCost[i] << 0;
+}
+$("#pizzaTotal").html(pizzaTotal);
   
 
     
