@@ -90,3 +90,9 @@ $(document).ready(function(){
     location.reload();
   })
 })
+$(document).ready(function(){
+  $("#cancelOrder").on("click",function(){
+    alert("You are about to cancel your order.Proceed?");
+    location.reload();
+  })
+})
