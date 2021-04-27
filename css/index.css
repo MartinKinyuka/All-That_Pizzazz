@@ -59,6 +59,8 @@ text-align: center;
 }
 #totalCost{
   display: none;
+  position: relative;
+  top: 50px;
 }
 #mainDelivery{
   display: none;

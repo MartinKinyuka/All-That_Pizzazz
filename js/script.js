@@ -71,6 +71,12 @@ $("#pizzaTotal").html(pizzaTotal);
 $(document).ready(function(){
   $("#delivery").on("click",function(){
     $("#deliveryDetails").show();
+    $("#total").hide();
+    $("#totalCost").show();
+    $("#zaTotal").html(pizzaTotal);
+    
+
+
   })
 })
 $(document).ready(function(){
